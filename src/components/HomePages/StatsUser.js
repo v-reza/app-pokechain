@@ -25,7 +25,7 @@ const StatsUser = () => {
           <div className="flex items-center ml-1 mt-2">
             <Image alt="token" src={bgToken} width={40} height={40} />
             <div className="ml-4">
-              <h2 className="text-xl font-bold">{currentUser?.profile.balance}</h2>
+              <h2 className="text-xl font-bold">{parseFloat(currentUser?.profile.token).toFixed(2)}</h2>
             </div>
           </div>
         </div>
